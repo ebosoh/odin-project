@@ -11,7 +11,8 @@ margin-bottom: 0px;
 .container{
 display: grid;
 grid-template-columns: repeat(12, 1fr);
-grid-template-rows: 100px 100px 200px 200px 200px 200px 50px;
+grid-auto-rows: minmax(70, auto);
+
 grid-template-areas: 
 ". header header header header header header header header header header . "
 ". heading heading heading heading heading heading heading heading heading heading . "
@@ -28,8 +29,8 @@ grid-template-areas:
 background-color: white;
 grid-area: header;
 background-color: #1f2937;
-padding-bottom: 50px;
-padding-left: 10px;
+
+
 
 
 
@@ -40,6 +41,8 @@ padding-left: 10px;
     background-color: white;
     grid-area: heading;
     background-color: #1f2937;
+    color: white;
+    
     
 }
 .random{
@@ -68,7 +71,7 @@ padding-left: 10px;
 
 .logo, span{
 
-font-size: 30px;
+font-size: 20px;
 font-weight: 900;
 
 }
@@ -79,16 +82,55 @@ span{
 }
 
 .logo{
-    width: 30px;
+color: white;
+/*border-style: solid; color: white;*/ 
+float: left; 
+margin-left: 25px;
+
+    
 
 }
 
 li {
+    
     color: white;
     display: inline-block;
     margin-right: 20px;
     list-style: none;
-    align-items: stretch;
-  
+    font-size: 20px;
+    float: left;
     
+}
+
+.heading-text{
+    float: left;
+    margin-right: 100px;
+    margin-left: 50px;
+    padding: 10px;
+    display: inline-block;
+    width: 350px;
+    font-weight: 900px;
+
+}
+
+.placeholder {
+    float: left;
+    width: 500px;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    margin-top: 50px;
+
+}
+
+.btn-1{
+width: 120px;
+height: 40px;
+background-color: #3882F6;
+border-radius: 10px;
+color: white;
+font-size: 20px;
+margin-top: 50px;
+
+
 }
