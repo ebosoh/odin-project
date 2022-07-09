@@ -1,0 +1,94 @@
+body{
+background-color: black;
+box-sizing: border-box;
+padding: 0px;
+margin: 0px;
+font-family: 'Roboto', sans-serif;
+margin-bottom: 0px;
+
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 100px 100px 200px 200px 200px 200px 50px;
+grid-template-areas: 
+". header header header header header header header header header header . "
+". heading heading heading heading heading heading heading heading heading heading . "
+". random random random random random random random random random random . "
+". thor thor thor thor thor thor thor thor thor thor . "
+". call-action call-action call-action call-action call-action call-action call-action call-action call-action call-action . "
+". footer footer footer footer footer footer footer footer footer footer . ";
+
+
+
+}
+
+.header{
+background-color: white;
+grid-area: header;
+background-color: #1f2937;
+padding-bottom: 50px;
+padding-left: 10px;
+
+
+
+}
+
+
+.heading{
+    background-color: white;
+    grid-area: heading;
+    background-color: #1f2937;
+    
+}
+.random{
+    background-color: white;
+    grid-area: random;
+}
+.thor{
+    background-color: #E5E7EB;
+    grid-area: thor;
+}
+.call-action {
+    background-color: white;
+    grid-area: call-action;
+}
+.footer{
+    grid-area: footer;
+    background-color: #1f2937;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    
+    
+}
+
+.logo, span{
+
+font-size: 30px;
+font-weight: 900;
+
+}
+
+span{
+    color: blue;
+  
+}
+
+.logo{
+    width: 30px;
+
+}
+
+li {
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+    align-items: stretch;
+  
+    
+}
