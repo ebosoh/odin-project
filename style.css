@@ -13,11 +13,13 @@ display: grid;
 grid-template-columns: repeat(12, 1fr);
 grid-auto-rows: minmax(70, auto);
 
+
 grid-template-areas: 
 ". header header header header header header header header header header . "
 ". heading heading heading heading heading heading heading heading heading heading . "
 ". random random random random random random random random random random . "
 ". thor thor thor thor thor thor thor thor thor thor . "
+". thor2 thor2 thor2 thor2 thor2 thor2 thor2 thor2 thor2 thor2 . "
 ". call-action call-action call-action call-action call-action call-action call-action call-action call-action call-action . "
 ". footer footer footer footer footer footer footer footer footer footer . ";
 
@@ -29,9 +31,6 @@ grid-template-areas:
 background-color: white;
 grid-area: header;
 background-color: #1f2937;
-
-
-
 
 
 }
@@ -48,10 +47,18 @@ background-color: #1f2937;
 .random{
     background-color: white;
     grid-area: random;
+    align-content: center;
 }
 .thor{
-    background-color: #E5E7EB;
+    background-color: white;
     grid-area: thor;
+}
+
+.thor2{
+    background-color: #E5E7EB;
+    grid-area: thor2;
+
+
 }
 .call-action {
     background-color: white;
@@ -77,15 +84,17 @@ font-weight: 900;
 }
 
 span{
-    color: blue;
+    color: #3882F6;
   
 }
 
 .logo{
 color: white;
 /*border-style: solid; color: white;*/ 
-float: left; 
-margin-left: 25px;
+ border-style: solid; color: white;
+margin-left: 50px;
+border-radius: 10px;
+border-left-color: #3882F6;
 
     
 
@@ -100,6 +109,9 @@ li {
     font-size: 20px;
     float: left;
     
+   
+
+    
 }
 
 .heading-text{
@@ -109,7 +121,7 @@ li {
     padding: 10px;
     display: inline-block;
     width: 350px;
-    font-weight: 900px;
+    font-weight: 1000;
 
 }
 
@@ -120,6 +132,7 @@ li {
     background-color: white;
     display: inline-block;
     margin-top: 50px;
+   
 
 }
 
@@ -133,4 +146,54 @@ font-size: 20px;
 margin-top: 50px;
 
 
+}
+h2{
+text-align: center;
+font-weight: 900;
+
+}
+
+.box1,.box2, .box3, .box4 {
+    width: 150px;
+    height: 150px;
+    border-style: solid; color: #3882F6;
+    margin-left: 100px;
+    border-radius: 10px;
+    border-width: 5px;
+    float: left;
+   
+    margin-right: 30px;
+}
+
+.para1, .para2, .para3, .para4{
+    width: 150px;
+    float: left;
+    margin-left: 125px;
+    border-width: 5px;
+    border-style: hidden;
+    
+
+}
+
+.thor22{
+    text-align: right;
+    font-size: 30px;
+    width: 900px;
+    
+}
+
+
+.sign-up-button{
+color: white;
+background-color: #3882F6;
+width: 100px;
+float: left;
+
+
+}
+
+.call-action{
+background-color: #3882F6;
+color: white;
+float: left;
 }
