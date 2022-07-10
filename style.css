@@ -57,12 +57,13 @@ background-color: #1f2937;
 .thor2{
     background-color: #E5E7EB;
     grid-area: thor2;
+    
 
 
 }
 .call-action {
     background-color: white;
-    grid-area: call-action;
+    grid-area: call-action;padding: 50px;
 }
 .footer{
     grid-area: footer;
@@ -186,14 +187,30 @@ font-weight: 900;
 .sign-up-button{
 color: white;
 background-color: #3882F6;
-width: 100px;
+width: 150px;
+height: 60px;
 float: left;
+border-style: solid; color: white;
+border-color: white;
+border-width: 3px;
+border-radius: 20px;
+font-size: 20px;
+font-weight: 900px;
 
 
 }
 
-.call-action{
+.action{
 background-color: #3882F6;
 color: white;
 float: left;
+width: 1200px;
+margin-left: 100px;
+border-radius: 10px;
+padding-left: 50px;
+
+}
+
+.para6{
+    text-align: center;
 }
